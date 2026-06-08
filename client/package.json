@@ -1,0 +1,58 @@
+pt-casino/
+  ├─ client/
+  │   ├─ package.json
+  │   ├─ tsconfig.json
+  │   ├─ vite.config.ts
+  │   ├─ tailwind.config.js
+  │   ├─ index.css
+  │   ├─ public/
+  │   │   └─ index.html
+  │   └─ src/
+  │       ├─ main.tsx
+  │       ├─ App.tsx
+  │       ├─ index.css            (optional – can be empty)
+  │       ├─ socket.ts
+  │       ├─ hooks/
+  │       │   └─ useAuth.tsx
+  │       ├─ components/
+  │       │   ├─ Layout.tsx
+  │       │   ├─ GameCard.tsx
+  │       │   ├─ BetSlider.tsx
+  │       │   ├─ SlotMachine.tsx
+  │       │   ├─ CrashBoard.tsx
+  │       │   ├─ RouletteWheel.tsx
+  │       │   ├─ DiceRoll.tsx
+  │       │   └─ BlackjackTable.tsx
+  │       └─ pages/
+  │           ├─ Home.tsx
+  │           ├─ GamePlay.tsx
+  │           └─ Dashboard.tsx
+  ├─ server/
+  │   ├─ package.json
+  │   ├─ tsconfig.json
+  │   ├─ .env.example
+  │   └─ src/
+  │       ├─ app.ts
+  │       ├─ server.ts
+  │       ├─ prisma/
+  │       │   ├─ client.ts
+  │       │   └─ schema.prisma
+  │       ├─ middleware/
+  │       │   ├─ auth.ts
+  │       │   └─ compliance.ts
+  │       ├─ services/
+  │       │   ├─ rng.ts
+  │       │   └─ stripeGateway.ts   (optional – stub for Stripe, used in demo mode)
+  │       ├─ routes/
+  │       │   ├─ auth.ts
+  │       │   ├─ compliance.ts
+  │       │   ├─ payments.ts
+  │       │   └─ games/
+  │       │       ├─ index.ts
+  │       │       ├─ slot.ts
+  │       │       ├─ crash.ts
+  │       │       ├─ roulette.ts
+  │       │       ├─ dice.ts
+  │       │       └─ blackjack.ts
+  └─ README.md
+
